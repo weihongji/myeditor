@@ -83,15 +83,16 @@
 			this.textBox1.Text = "x1\r\nx2\r\nx3\r\nx4\r\nx5\r\nx6\r\nx7\r\nx8\r\nx9\r\nx10\r\nx11\r\nx12\r\nx13\r\nx14\r\nx15\r\nx16\r\nx17\r\nx18\r\n" +
     "x19\r\nx20\r\nx21\r\nx22\r\nx23\r\nx24\r\nx25\r\nx26\r\nx27\r\nx28\r\nx29\r\nx30";
 			// 
-			// MyEditor
+			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(766, 415);
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.panel2);
-			this.Name = "MyEditor";
+			this.Name = "Form1";
 			this.Text = "See Line Numbers";
+			this.Activated += new System.EventHandler(this.Form1_Activated);
 			this.Load += new System.EventHandler(this.MyEditor_Load);
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
