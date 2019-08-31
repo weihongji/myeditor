@@ -32,6 +32,11 @@ namespace MyEditor
 			textBox1.Styles[Style.Default].Font = "Microsoft Sans Serif";
 			textBox1.Styles[Style.Default].Size = 11;
 
+			textBox1.SetSelectionBackColor(true, IntToColor(0x0078D7));
+		}
+
+		public static Color IntToColor(int rgb) {
+			return Color.FromArgb(255, (byte)(rgb >> 16), (byte)(rgb >> 8), (byte)rgb);
 		}
 
 		private void textBox1_Click(object sender, EventArgs e) {

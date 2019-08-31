@@ -57,6 +57,7 @@
 			this.Controls.Add(this.btnScintillaEditor);
 			this.Controls.Add(this.btnMyEditor);
 			this.Name = "MainForm";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Open Forms";
 			this.ResumeLayout(false);
 

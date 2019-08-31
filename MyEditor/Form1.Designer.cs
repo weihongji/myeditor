@@ -27,8 +27,8 @@
 		private void InitializeComponent() {
 			this.textBox2 = new System.Windows.Forms.TextBox();
 			this.panel1 = new System.Windows.Forms.Panel();
-			this.panel2 = new System.Windows.Forms.Panel();
 			this.textBox1 = new MyEditor.MyTBox();
+			this.panel2 = new System.Windows.Forms.Panel();
 			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -60,14 +60,6 @@
 			this.panel1.TabIndex = 1;
 			this.panel1.Resize += new System.EventHandler(this.panel1_Resize);
 			// 
-			// panel2
-			// 
-			this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-			this.panel2.Location = new System.Drawing.Point(0, 317);
-			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(766, 98);
-			this.panel2.TabIndex = 2;
-			// 
 			// textBox1
 			// 
 			this.textBox1.Buddy = this.textBox2;
@@ -83,6 +75,14 @@
 			this.textBox1.Text = "x1\r\nx2\r\nx3\r\nx4\r\nx5\r\nx6\r\nx7\r\nx8\r\nx9\r\nx10\r\nx11\r\nx12\r\nx13\r\nx14\r\nx15\r\nx16\r\nx17\r\nx18\r\n" +
     "x19\r\nx20\r\nx21\r\nx22\r\nx23\r\nx24\r\nx25\r\nx26\r\nx27\r\nx28\r\nx29\r\nx30";
 			// 
+			// panel2
+			// 
+			this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.panel2.Location = new System.Drawing.Point(0, 317);
+			this.panel2.Name = "panel2";
+			this.panel2.Size = new System.Drawing.Size(766, 98);
+			this.panel2.TabIndex = 2;
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -91,6 +91,7 @@
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.panel2);
 			this.Name = "Form1";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "See Line Numbers";
 			this.Activated += new System.EventHandler(this.Form1_Activated);
 			this.Load += new System.EventHandler(this.MyEditor_Load);

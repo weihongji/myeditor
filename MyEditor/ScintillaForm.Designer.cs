@@ -117,6 +117,7 @@
 			this.Controls.Add(this.panel2);
 			this.Controls.Add(this.statusStrip1);
 			this.Name = "ScintillaForm";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Scintilla Form";
 			this.Load += new System.EventHandler(this.ScintillaForm_Load);
 			this.panel1.ResumeLayout(false);
